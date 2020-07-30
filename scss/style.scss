@@ -757,7 +757,6 @@ html {
     }
 
     &__header{
-        width: 360px;
         background-color: $colorSecondary;
         display: flex;
         justify-content: space-between;
@@ -781,6 +780,9 @@ html {
         width: 100%;
         background-color: #f4f5f7;
         position: relative;
+        border-left: 1px solid #e2e2e2; 
+        border-right:1px solid #e2e2e2;
+        box-sizing: border-box;
     }
 
     &__time-block{

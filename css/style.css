@@ -900,7 +900,6 @@ html {
 }
 
 .deals__header {
-  width: 360px;
   background-color: #2a2a2a;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -930,6 +929,10 @@ html {
   width: 100%;
   background-color: #f4f5f7;
   position: relative;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .deals__time-block {
