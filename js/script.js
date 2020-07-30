@@ -192,10 +192,10 @@ showcase.addEventListener('click', (event) => {
 
 // form
 
-const login = document.querySelector('.js--login'),
+const login = document.querySelectorAll('.js--login'),
     exit = document.querySelectorAll('.login-form__exit'),
     formWrapper = document.querySelector('.header__form-wrapper'),
-    reg = document.querySelector('.js--reg');
+    reg = document.querySelectorAll('.js--reg');
 
 function showForm(event) {
     const target = event.target;
@@ -203,7 +203,7 @@ function showForm(event) {
     formWrapper.classList.add('header__form-wrapper--show');
     console.log(event.target);
 
-    if (target === login) {
+    if (target.classList.contains('js--login')) {
         document.querySelector('.header__login-form').classList.add('header__login-form--show');
     } else if (target.classList.contains('js--reg')) { // коррект нужен
         document.querySelector('.header__reg-form').classList.add('header__reg-form--show');
@@ -213,13 +213,13 @@ function showForm(event) {
 function hideForm() {
     document.body.style.overflow = '';
     formWrapper.classList.remove('header__form-wrapper--show');
-    document.querySelector('.header__login-form').classList.remove('header__login-form--show');
-    document.querySelector('.header__reg-form').classList.remove('header__reg-form--show');
+    document.querySelectorAll('.header__login-form').forEach(elem => elem.classList.remove('header__login-form--show'));
+    document.querySelectorAll('.header__reg-form').forEach(elem => elem.classList.remove('header__reg-form--show'));
 }
 
 
-login.addEventListener('click', event => showForm(event));
-reg.addEventListener('click', event => showForm(event));
+login.forEach(elem => elem.addEventListener('click', event => showForm(event)));
+reg.forEach(elem => elem.addEventListener('click', event => showForm(event)));
 exit.forEach(i => i.addEventListener('click', hideForm));
 
 formWrapper.addEventListener('click', (event) => {
@@ -242,3 +242,47 @@ footer__socialLinks = document.querySelectorAll('.footer__social-link');
 
 footer__links.forEach(i => i.addEventListener('click', event => event.preventDefault()));
 footer__socialLinks.forEach(i => i.addEventListener('click', event => event.preventDefault()));
+
+//burger 
+const burger__exit = document.querySelector('.js-burger__exit'),
+burger__wrapper = document.querySelector('.burger-menu__wrapper'),
+burger__menu = document.querySelector('.burger-menu'),
+header__burger = document.querySelector('.header__burger');
+
+
+function showBurger(){
+    burger__wrapper.classList.add('burger-menu__wrapper--show');
+    document.body.style.overflow = 'hidden';
+}
+
+function hideBurger(){
+    burger__wrapper.classList.remove('burger-menu__wrapper--show')
+    document.body.style.overflow = '';
+}
+
+
+header__burger.addEventListener('click', showBurger);
+burger__exit.addEventListener('click', hideBurger);
+
+
+burger__wrapper.addEventListener('click', (event) => {
+    const target = event.target;
+    if(target.classList.contains('burger-menu__wrapper')){{
+        hideBurger();
+    }}
+})
+
+burger__menu.addEventListener('click', event => {
+    target = event.target;
+    console.log(target);
+    if(target.tagName == 'A' || target.tagName == 'SPAN'){
+        hideBurger();
+    } 
+});
+
+document.addEventListener('keydown', (event) => {
+    target = event.target;
+    if (burger__wrapper.classList.contains('burger-menu__wrapper--show') && event.keyCode == 27) {
+        hideBurger();
+    }
+})
