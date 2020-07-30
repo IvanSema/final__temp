@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bb2a3a56fb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src="slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <title>Final</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__help-wrapper">
+            <div class="mainer">
+                <div class="header__help">
+                    <ul class="header__help-ul">
+                        <li class="header__help-li" tabindex="1">
+                            <select class="header__select" tabindex="-1">
+                                <option value="USD" class="header__option">USD</option>
+                                <option value="" class="header__option">RUB</option>
+                            </select>
+                            
+                        </li>
+                        <li class="header__help-li" tabindex="1">
+                            <select class="header__select" tabindex="-1">
+                                <option value="" class="header__option">English</option>
+                                <option value="" class="header__option">Russian</option>
+                            </select>
+                        </li>
+                        <li class="header__help-li header__help-li--mod" tabindex="1">
+                                <select class="header__select" tabindex="-1">
+                                    <option value="" class="header__option">Help</option>
+                                    <option value="" class="header__option">Help</option>
+                                </select>
+                        </li>
+                    </ul>
+                    <ul class="header__user-info-ul">
+                        <li class="header__user-info-li"><span tabindex="1" class="header__user-info-span js--login"><i class="fas fa-user"></i> Login</span></li>
+                        <li class="header__user-info-li"><span tabindex="1" class="header__user-info-span js--reg"><i class="fas fa-lock"></i> Register</span></li>
+                        <li class="header__user-info-li">
+                            <div class="header__burger" tabindex="1">
+                                <hr class="header__hr">
+                                <hr class="header__hr">
+                                <hr class="header__hr">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__info--wrapper">
+            <div class="mainer">
+                <div class="header__info">
+                    <div class="header__tel-block"> <i class="fas fa-mobile-alt"></i> <span class="header__tel">2300 -
+                            3560 - 222</span></div>
+                    <div class="header__logo"><img src="images/header__logo.png" alt="header__logo"
+                            class="header__logo-img"></div>
+                    <div class="header__bucker">
+                        <i class="fas fa-shopping-bag"></i>
+                        <div class="header__counter-block"> 0 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__form-wrapper">
+                <form class="header__login-form js--login-form">
+
+                    <div class="login-form__exit">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+
+                    <div class="login-form__headline">Sign In</div>
+
+                    <hr class="login-form__hr">
+
+                    <input type="text" class="login-form__input" placeholder="login" required>
+                    <input type="password" class="login-form__input" placeholder="password" required>
+
+                    <div class="login-form__func-wrapper">
+                        <label class="login-form__checkbox-wrapper">
+                            <input type="checkbox" class='login-form__checkbox'>
+                            <span class="login-form__span">Remember me</span>
+                        </label>
+
+                        <button class='blog__btn login-form__btn'>Sign In</button>
+                    </div>
+                </form>
+
+                <form class="header__reg-form js--reg-form">
+
+                    <div class="login-form__exit">
+                        <i class="fas fa-times"></i>
+                    </div>
+
+
+                    <div class="login-form__headline">Register</div>
+
+                    <hr class="login-form__hr">
+                    <input type="text" class="login-form__input" placeholder="login" required>
+                    <input type="email" class="login-form__input" placeholder="email" required>
+                    <input type="password" class="login-form__input" placeholder="password" required>
+
+                    <div class="login-form__func-wrapper">
+                        <label class="login-form__checkbox-wrapper">
+                            <input type="checkbox" class='login-form__checkbox' required>
+                            <span class="login-form__span">you agree to our Data Policy</span>
+                        </label>
+
+                        <button class='blog__btn login-form__btn'>Sign Up</button>
+                    </div>
+                </form>
+        </div>
+    </header>
+
+    <div class="menu-wrapper">
+        <div class="mainer">
+            <div class="menu">
+
+                <button class="menu__search-btn"><i class="fas fa-search"></i></button>
+
+
+                <form class="menu__form">
+                    <i class="fas fa-list-ul"></i>
+                    <select class='form__select'>
+                        <option>Select a category</option>
+                        <option>???</option>
+                    </select>
+
+                    <input type="text" class='form__text' placeholder="Search products..." required>
+                    <button class="menu__form-btn"><i class="fas fa-search"></i></button>
+                </form>
+
+                <nav class="nav">
+                    <a href="#" class="nav__link">home</a>
+                    <a href="#" class="nav__link">furniture</a>
+                    <a href="#" class="nav__link">chair</a>
+                    <a href="#" class="nav__link">table</a>
+                    <a href="#" class="nav__link">sofa</a>
+                    <a href="#" class="nav__link">bedroom</a>
+                    <a href="#" class="nav__link">blog</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainer">
+
+        <div class="offers">
+            <div class="offers__grid">
+                <div class="offers__cell">
+                    <div class="deals">
+                        <div class="deals__header">
+                            <span class="deals__headline">hot deals</span>
+                            <div class="dots">
+                                <div class="dot orange"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="deals__content">
+                            <img src="images/ASARUM__main.jpg" alt="angsta" class="deals__img">
+                            <div class="deals__time-block-wrapper">
+                                <div class="deals__time-block">
+                                    <span class="time-block__number js-timer_days">25</span>
+                                    <span class="time-block__time">days</span>
+                                </div>
+                                <div class="deals__time-block">
+                                    <span class="time-block__number js-timer_hours">10</span>
+                                    <span class="time-block__time">hrs</span>
+                                </div>
+                                <div class="deals__time-block">
+                                    <span class="time-block__number js-timer_mins">45</span>
+                                    <span class="time-block__time">mins</span>
+                                </div>
+                                <div class="deals__time-block">
+                                    <span class="time-block__number js-timer_secs">30</span>
+                                    <span class="time-block__time">secs</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="deals__description">
+                            <span class="deals__name">ASARUM</span>
+                            <div class="deals__stars">
+                                <span class="deals__star"><i class="fas fa-star"></i></span>
+                                <span class="deals__star"><i class="fas fa-star"></i></span>
+                                <span class="deals__star"><i class="fas fa-star"></i></span>
+                                <span class="deals__star"><i class="far fa-star"></i></span>
+                                <span class="deals__star"><i class="far fa-star"></i></span>
+                            </div>
+
+                            <div class="deals__line">
+                                <div class="deals__separator"></div>
+                            </div>
+                            <div class="deals__footer">
+                                <div class="deals__function-wrapper">
+                                    <div class="deals__function" tabindex="1">
+                                        <i class="far fa-eye"></i>
+                                    </div>
+
+                                    <div class="deals__function" tabindex="1">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+
+                                    <div class="deals__function" tabindex="1">
+                                        <i class="fas fa-exchange-alt"></i>
+                                    </div>
+                                </div>
+
+                                <div class="deals__price-block">
+                                    <div class="deals__price-last">$250.00</div>
+                                    <button class="deals__price-new">$190.00</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers__cell">
+                    <div class="offers__slide">
+                        <div class="offers__slide offers__slide--js">
+                            <div class='offers__offer'>
+                                
+                                <img class='offers__showcase-img'src="images/slide__1.jpg" alt="slide1">
+                                <div class="offers__description">
+                                    <span class="offers__headline">indoor furniture</span>
+                                    <span class="offers__headline-text">save up to 50% of all furniture</span>
+                                </div>
+                            </div>
+                            <div class='offers__offer'>
+                                <img class='offers__showcase-img'src="images/slide__2.jpg" alt="slide2">
+                                <div class="offers__description">
+                                    <span class="offers__headline">indoor furniture</span>
+                                    <span class="offers__headline-text">save up to 50% of all furniture</span>
+                                </div></div>
+                            <div class='offers__offer'>
+                                <img class='offers__showcase-img'src="images/slide__3.jpg" alt="slide3">
+                                <div class="offers__description">
+                                    <span class="offers__headline">indoor furniture</span>
+                                    <span class="offers__headline-text">save up to 50% of all furniture</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages">
+            <div class="advantages__content" tabindex="1">
+                <div class="advantages__logo">
+                    <i class="fas fa-truck"></i>
+                </div>
+
+                <span class="advantages__headline">Free Shipping</span>
+                <span class="advantages__description">all order</span>
+            </div>
+            <div class="advantages__content" tabindex="1">
+                <div class="advantages__logo">
+                    <i class="fas fa-headphones-alt"></i>
+                </div>
+                <span class="advantages__headline">24/7 customer</span>
+                <span class="advantages__description">support</span>
+            </div>
+            <div class="advantages__content" tabindex="1">
+                <div class="advantages__logo">
+                    <i class="fas fa-reply-all"></i>
+                </div>
+                <span class="advantages__headline">money back</span>
+                <span class="advantages__description">guarantee</span>
+            </div>
+            <div class="advantages__content" tabindex="1">
+                <div class="advantages__logo">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <span class="advantages__headline">MEMBER DISCOUNT</span>
+                <span class="advantages__description">first oredr</span>
+            </div>
+        </div>
+
+
+        <div class="ad">
+            <div class="ad__cell ad__cell--left">
+                <div class="ad__content-left-wrapper">
+                    <img src="images/CSS-grid__left.jpg" alt="sofa-css-grid" class='ad__content-sofa-left'>
+                    <div class="ad__content-left"></div>
+                </div>
+            </div>
+            <div class="ad__cell">
+                <div class="ad__content-right-top">
+                    <img src="images/CSS-grid__right.jpg" alt="sofa-css-grid" class='ad__content-sofa-right'>
+                </div>
+            </div>
+            <div class="ad__cell">
+                <div class="ad__content-right-bottom">
+                    <img src="images/CSS-grid__right2.jpg" alt="sofa-css-grid" class='ad__content-sofa-right'>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="showcase">
+            <div class="showcase__header">
+                <div class="showcase__headline showcase__headline-mod">new furniture</div>
+                <div class="showcase__select-wrapper">
+                    <select name="" id="" class="showcase__select">
+                </div>
+                    <option value="Bed">Bed</option>
+                    <option value="Chair">Chair</option>
+                    <option value="Sofa">Sofa</option>
+                    <option value="Table">Table</option>
+                    <option value="Dining">Dining</option>
+                </select>
+                <div class="showcase__ul">
+                    <div class="showcase__li"><span class="showcase__span showcase__bed--js active" tabindex="1">Bed</span></div>
+                    <div class="showcase__li"><span class="showcase__span showcase__chair--js" tabindex="1">Chair</span></div>
+                    <div class="showcase__li"><span class="showcase__span showcase__sofa--js" tabindex="1">Sofa</span></div>
+                    <div class="showcase__li"><span class="showcase__span showcase__table--js" tabindex="1">Table</span></div>
+                    <div class="showcase__li"><span class="showcase__span showcase__dining--js" tabindex="1">Dining</span></div>
+                </div>
+            </div>
+
+            <div class="separator">
+                <hr class="separator__hr">
+                <div class="dots">
+                    <div class="dot orange"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <div class="showcase__grid">
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase__item">
+                    <div class="item__img-block"></div>
+                    <div class="deals__description showcase__description--mod">
+                        <span class="deals__name">Aenean Ru Bristique</span>
+                        <div class="deals__stars">
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="fas fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                            <span class="deals__star"><i class="far fa-star"></i></span>
+                        </div>
+
+                        <div class="deals__line">
+                            <div class="deals__separator"></div>
+                        </div>
+                        <div class="deals__footer">
+                            <div class="deals__function-wrapper showcase__function-wrapper--mod">
+
+
+                                <div class="deals__function">
+                                    <i class="far fa-heart"></i>
+                                </div>
+
+                                <div class="deals__function">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                            </div>
+
+                            <div class="deals__price-block">
+                                <div class="deals__price-last">$350.00</div>
+                                <div class="deals__price-new">$300.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase__item--empty"></div>
+                <div class="showcase__item--empty"></div>
+                <div class="showcase__item--empty"></div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="gallery__grid">
+            <div class="gallery__cell">
+                <div class="gallery__block">
+                    <div class="showcase__headline">furniture gallery</div>
+                    <div class="separator">
+                        <hr class="separator__hr">
+                    </div>
+
+                    <div class="gallery__tabs">
+                        <div class="gallery__tab" tabindex="1">featured</div>
+                        <div class="gallery__tab active" tabindex="1">top seller</div>
+                        <div class="gallery__tab" tabindex="1">sale off</div>
+                        <div class="gallery__tab" tabindex="1">top rated</div>
+                    </div>
+                    <div class="gallery__slide-wrapper">
+                        <div class="gallery__slide">
+                            <div class='brand__content'><img src="images/brand1.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand2.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand3.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand4.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand5.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand2.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand4.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand3.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand5.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand1.png" alt="brand"></div>
+                            <div class='brand__content'><img src="images/brand3.png" alt="brand"></div>
+                        </div>
+                        <div class="gallery__slides">
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                            <div class='brand__content gallery__content'></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="gallery__cell">
+                <div class="gallery__ad">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="blog">
+            <div class="showcase__headline">latest blog</div>
+
+            <div class="separator">
+                <hr class="separator__hr">
+                <div class="dots">
+                    <div class="dot orange"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+
+            <div class="blog__grid">
+
+                <div class="blog__article">
+                    <div class="blog__img-block"></div>
+                    <div class="blog__description-block">
+                        <div class="blog__date-wrapper">
+                            <div class="blog__date">
+                                <i class="fas fa-calendar-alt"></i> 15 jan 2016
+                            </div>
+                            <div class="blog__comments"><i class="fas fa-comments"></i> 4 Comments</div>
+                        </div>
+
+                        <span class="blog__headline">Products That Fight Static </span>
+                        <span class="blog__description">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget
+                            luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum
+                            magna in, ornare enim.</span>
+
+                        <button class="blog__btn">Read More</button>
+                    </div>
+                </div>
+
+                <div class="blog__article">
+                    <div class="blog__img-block"></div>
+                    <div class="blog__description-block">
+                        <div class="blog__date-wrapper">
+                            <div class="blog__date">
+                                <i class="fas fa-calendar-alt"></i> 15 jan 2016
+                            </div>
+                            <div class="blog__comments"><i class="fas fa-comments"></i> 4 Comments</div>
+                        </div>
+
+                        <span class="blog__headline">Products That Fight Static </span>
+                        <span class="blog__description">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget
+                            luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum
+                            magna in, ornare enim.</span>
+
+                        <button class="blog__btn">Read More</button>
+                    </div>
+                </div>
+
+                <div class="blog__article">
+                    <div class="blog__img-block"></div>
+                    <div class="blog__description-block">
+                        <div class="blog__date-wrapper">
+                            <div class="blog__date">
+                                <i class="fas fa-calendar-alt"></i> 15 jan 2016
+                            </div>
+                            <div class="blog__comments"><i class="fas fa-comments"></i> 4 Comments</div>
+                        </div>
+
+                        <span class="blog__headline">Products That Fight Static </span>
+                        <span class="blog__description">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget
+                            luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum
+                            magna in, ornare enim.</span>
+
+                        <button class="blog__btn">Read More</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div class='brand--js brand'>
+            <div class='brand__content'><img src="images/brand1.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand2.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand3.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand4.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand5.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand2.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand4.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand3.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand5.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand1.png" alt="brand"></div>
+            <div class='brand__content'><img src="images/brand3.png" alt="brand"></div>
+        </div>
+
+        <div class="feedback">
+            <div class="showcase__headline">client feedback</div>
+            <div class="separator">
+                <hr class="separator__hr">
+            </div>
+
+            <div class="feedback__content">
+                <div class="feedback__quote">
+                    <i class="fas fa-quote-right"></i>
+                </div>
+
+                <span class="feedback__comment">
+                    Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                    clita kasd gubergren.
+                </span>
+
+                <div class="feedback__user">
+                    <div class="feedback__avatar"></div>
+                    <div class="feedback__info">
+                        <span class="feedback__name">John Smith</span>
+                        <span class="feedback__status">Furniture client</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class='footer'>
+        <div class="footer__options">
+            <div class="mainer">
+                <div class="footer__grid">
+                    <div class="footer__cell">
+                        <div class="footer__headline">INFORMATION</div>
+                        <a href="" class="footer__link">About us</a>
+                        <a href="" class="footer__link">Privacy</a>
+                        <a href="" class="footer__link">Conditions</a>
+                        <a href="" class="footer__link">Online support</a>
+                    </div>
+                    <div class="footer__cell">
+                        <div class="footer__headline">MY ACCOUNT</div>
+                        <a href="" class="footer__link">Login</a>
+                        <a href="" class="footer__link">My Cart</a>
+                        <a href="" class="footer__link">Wishlist</a>
+                        <a href="" class="footer__link">Checkout</a>
+                    </div>
+                    <div class="footer__cell">
+                        <div class="footer__headline">INFORMATION</div>
+                        <a href="" class="footer__link">Specials</a>
+                        <a href="" class="footer__link">New Products</a>
+                        <a href="" class="footer__link">Best Sellers</a>
+                        <a href="" class="footer__link">Our Stores</a>
+                    </div>
+                    <div class="footer__cell">
+                        <div class="footer__headline">ORDERS</div>
+                        <a href="" class="footer__link">Payment options</a>
+                        <a href="" class="footer__link">Shipping and delivery</a>
+                        <a href="" class="footer__link">Returns</a>
+                        <a href="" class="footer__link">Shipping</a>
+                        <div class="footer__cards-block"><img src="images/cards.png" alt="cards" class="footer__card">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer__rights">
+            <div class="mainer">
+                <div class="footer__grid">
+                    <div class="footer__cell"></div>
+                    <div class="footer__cell">
+                        <span class="footer__copyright">©Copyright 2016 Bazar | All Rights Reserved</span>
+                    </div>
+                    <div class="footer__cell">
+                        <ul class="footer__ul">
+                            <li class="footer__li"><a href="#" class="footer__social-link"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="footer__li"><a href="#" class="footer__social-link"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li class="footer__li"><a href="#" class="footer__social-link"><i
+                                        class="fab fa-youtube"></i></a></li>
+                            <li class="footer__li"><a href="#" class="footer__social-link"><i
+                                        class="fab fa-google-plus-g"></i></a></li>
+                            <li class="footer__li"><a href="#" class="footer__social-link"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li class="footer__li"><a href="#" class="footer__social-link"><i
+                                        class="fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('.offers__slide--js').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            prevArrow: "<div class='offers__prev'><i class='fas fa-chevron-left'></i></div>",
+            nextArrow: "<div class='offers__next'><i class='fas fa-chevron-right'></i></div>"
+        });
+
+        $('.brand--js').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            prevArrow: "<div class='brand__prev'><i class='fas fa-chevron-left'></i></div>",
+            nextArrow: "<div class='brand__next'><i class='fas fa-chevron-right'></i></div>"
+        });
+
+
+        $('.gallery__slide').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.gallery__slides'
+        });
+
+        $('.gallery__slides').slick({
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            asNavFor: '.gallery__slide',
+            centerMode: true,
+            focusOnSelect: true,
+            arrows: true,
+            prevArrow: "<div class='brand__prev gallery__prev'><i class='fas fa-chevron-left'></i></div>",
+            nextArrow: "<div class='brand__next gallery__next'><i class='fas fa-chevron-right'></i></div>"
+        
+        });
+    </script>
+</body>

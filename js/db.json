@@ -1,0 +1,568 @@
+[
+    {
+        "name": "NOLMYRA",
+        "description": "",
+        "category": "chair",
+        "price": 29.99,
+        "oldprice": false,
+        "availability": true,
+        "stars": 2,
+        "images": [
+            "images/nolmyra__main.jpg",
+            "images/nolmyra__1.jpg",
+            "images/nolmyra__2.jpg",
+            "images/nolmyra__3.jpg",
+            "images/nolmyra__4.jpg"
+        ]
+    },
+    {
+        "name": "VALLENTUNA",
+        "description": "",
+        "category": "chair",
+        "price": 339,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/VALLENTUNA__main.jpg",
+            "images/VALLENTUNA__1.jpg",
+            "images/VALLENTUNA__2.jpg",
+            "images/VALLENTUNA__3.jpg",
+            "images/VALLENTUNA__4.jpg",
+            "images/VALLENTUNA__5.jpg",
+            "images/VALLENTUNA__6.jpg"
+        ]
+    },
+    {
+        "name": "OMTÄNKSAM",
+        "description": "",
+        "category": "chair",
+        "price": 279,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/OMTÄNKSAM__main.jpg",
+            "images/OMTÄNKSAM__1.jpg",
+            "images/OMTÄNKSAM__2.jpg",
+            "images/OMTÄNKSAM__3.jpg",
+            "images/OMTÄNKSAM__4.jpg",
+            "images/OMTÄNKSAM__5.jpg",
+            "images/OMTÄNKSAM__6.jpg"
+        ]
+    },
+    {
+        "name": "SÖDERHAMN",
+        "description": "",
+        "category": "chair",
+        "price": 270,
+        "oldprice": false,
+        "availability": true,
+        "stars": 2,
+        "images": [
+            "images/SÖDERHAMN__main.jpg",
+            "images/SÖDERHAMN__1.jpg",
+            "images/SÖDERHAMN__2.jpg",
+            "images/SÖDERHAMN__3.jpg"
+        ]
+    },
+    {
+        "name": "BINGSTA",
+        "description": "",
+        "category": "chair",
+        "price": 185,
+        "oldprice": false,
+        "availability": true,
+        "stars": 1,
+        "images": [
+            "images/BINGSTA__main.jpg",
+            "images/BINGSTA__1.jpg",
+            "images/BINGSTA__2.jpg",
+            "images/BINGSTA__3.jpg",
+            "images/BINGSTA__4.jpg",
+            "images/BINGSTA__5.jpg"
+        ]
+    },
+    {
+        "name": "EKENÄSET",
+        "description": "",
+        "category": "chair",
+        "price": 155,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/EKENÄSET__main.jpg",
+            "images/EKENÄSET__1.jpg",
+            "images/EKENÄSET__2.jpg",
+            "images/EKENÄSET__3.jpg",
+            "images/EKENÄSET__4.jpg",
+            "images/EKENÄSET__5.jpg"
+        ]
+    },
+    {
+        "name": "STRANDMON",
+        "description": "",
+        "category": "chair",
+        "price": 189,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/STRANDMON__main.jpg",
+            "images/STRANDMON__1.jpg",
+            "images/STRANDMON__2.jpg",
+            "images/STRANDMON__3.jpg",
+            "images/STRANDMON__4.jpg",
+            "images/STRANDMON__5.jpg"
+        ]
+    },
+    {
+        "name": "POÄNG",
+        "description": "",
+        "category": "chair",
+        "price": 59,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/POÄNG__main.jpg",
+            "images/POÄNG__1.jpg",
+            "images/POÄNG__2.jpg",
+            "images/POÄNG__3.jpg",
+            "images/POÄNG__4.jpg"
+        ]
+    },
+    {
+        "name": "STRANDMON",
+        "description": "",
+        "category": "chair",
+        "price": 169,
+        "oldprice": 189,
+        "availability": true,
+        "stars": 2,
+        "images": [
+            "images/STRANDMON_red__main.jpg",
+            "images/STRANDMON_red__1.jpg",
+            "images/STRANDMON_red__2.jpg",
+            "images/STRANDMON_red__3.jpg",
+            "images/STRANDMON_red__4.jpg",
+            "images/STRANDMON_red__5.jpg"
+        ]
+    },
+    {
+        "name": "GISTAD",
+        "description": "",
+        "category": "chair",
+        "price": 219,
+        "oldprice": false,
+        "availability": true,
+        "stars": 1,
+        "images": [
+            "images/GISTAD__main.jpg",
+            "images/GISTAD__1.jpg",
+            "images/GISTAD__2.jpg",
+            "images/GISTAD__3.jpg",
+            "images/GISTAD__4.jpg",
+            "images/GISTAD__5.jpg"
+        ]
+    },
+    {
+        "name": "EKERÖ",
+        "description": "",
+        "category": "chair",
+        "price": 145,
+        "oldprice": false,
+        "availability": true,
+        "stars": 2,
+        "images": [
+            "images/EKERÖ__main.jpg",
+            "images/EKERÖ__1.jpg",
+            "images/EKERÖ__2.jpg",
+            "images/EKERÖ__3.jpg"
+        ]
+    },
+    {
+        "name": "NEIDEN",
+        "description": "",
+        "category": "bed",
+        "price": 59,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/NEIDEN__main.jpg",
+            "images/NEIDEN__1.jpg",
+            "images/NEIDEN__2.jpg",
+            "images/NEIDEN__3.jpg",
+            "images/NEIDEN__4.jpg",
+            "images/NEIDEN__5.jpg"
+        ]
+    },
+    {
+        "name": "SAGSTUA",
+        "description": "",
+        "category": "bed",
+        "price": 149,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/SAGSTUA__main.jpg",
+            "images/SAGSTUA__1.jpg",
+            "images/SAGSTUA__2.jpg",
+            "images/SAGSTUA__3.jpg",
+            "images/SAGSTUA__4.jpg",
+            "images/SAGSTUA__5.jpg"
+        ]
+    },
+    {
+        "name": "PLATSA",
+        "description": "",
+        "category": "bed",
+        "price": 239,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/PLATSA__main.jpg",
+            "images/PLATSA__1.jpg",
+            "images/PLATSA__2.jpg"
+        ]
+    },
+    {
+        "name": "DELAKTIG",
+        "description": "",
+        "category": "bed",
+        "price": 369,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/DELAKTIG__main.jpg",
+            "images/DELAKTIG__1.jpg",
+            "images/DELAKTIG__2.jpg",
+            "images/DELAKTIG__3.jpg"
+        ]
+    },
+    {
+        "name": "HAUGA",
+        "description": "",
+        "category": "bed",
+        "price": 189,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/HAUGA__main.jpg",
+            "images/HAUGA__1.jpg",
+            "images/HAUGA__2.jpg",
+            "images/HAUGA__3.jpg",
+            "images/HAUGA__4.jpg"
+        ]
+    },
+    {
+        "name": "SLATTUM",
+        "description": "",
+        "category": "bed",
+        "price": 119,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/SLATTUM__main.jpg",
+            "images/SLATTUM__1.jpg",
+            "images/SLATTUM__2.jpg",
+            "images/SLATTUM__3.jpg",
+            "images/SLATTUM__4.jpg",
+            "images/SLATTUM__5.jpg",
+            "images/SLATTUM__6.jpg"
+        ]
+    },
+    {
+        "name": "DELAKTIG",
+        "description": "",
+        "category": "bed",
+        "price": 586,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/DELAKTIG1__main.jpg",
+            "images/DELAKTIG1__1.jpg",
+            "images/DELAKTIG1__2.jpg"
+        ]
+    },
+    {
+        "name": "NORDLI",
+        "description": "",
+        "category": "bed",
+        "price": 329,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/NORDLI__main.jpg",
+            "images/NORDLI__1.jpg",
+            "images/NORDLI__2.jpg",
+            "images/NORDLI__3.jpg",
+            "images/NORDLI__4.jpg",
+            "images/NORDLI__5.jpg"
+        ]
+    },
+    {
+        "name": "MALM",
+        "description": "",
+        "category": "bed",
+        "price": 349,
+        "oldprice": false,
+        "availability": true,
+        "stars": 2,
+        "images": [
+            "images/MALM__main.jpg",
+            "images/MALM__1.jpg",
+            "images/MALM__2.jpg",
+            "images/MALM__3.jpg",
+            "images/MALM__4.jpg",
+            "images/MALM__5.jpg"
+        ]
+    },
+    {
+        "name": "ASKVOLL",
+        "description": "",
+        "category": "bed",
+        "price": 115,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/ASKVOLL__main.jpg",
+            "images/ASKVOLL__1.jpg",
+            "images/ASKVOLL__2.jpg",
+            "images/ASKVOLL__3.jpg",
+            "images/ASKVOLL__4.jpg",
+            "images/ASKVOLL__5.jpg"
+        ]
+    },
+    {
+        "name": "TRYSIL",
+        "description": "",
+        "category": "bed",
+        "price": 119,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/TRYSIL__main.jpg",
+            "images/TRYSIL__1.jpg",
+            "images/TRYSIL__2.jpg",
+            "images/TRYSIL__3.jpg",
+            "images/TRYSIL__4.jpg",
+            "images/TRYSIL__5.jpg"
+        ]
+    },
+    {
+        "name": "BRIMNES",
+        "description": "",
+        "category": "bed",
+        "price": 175,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/BRIMNES__main.jpg",
+            "images/BRIMNES__1.jpg",
+            "images/BRIMNES__2.jpg",
+            "images/BRIMNES__3.jpg",
+            "images/BRIMNES__4.jpg",
+            "images/BRIMNES__5.jpg"
+        ]
+    },
+    {
+        "name": "SONGESAND",
+        "description": "",
+        "category": "bed",
+        "price": 139,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/SONGESAND__main.jpg",
+            "images/SONGESAND__1.jpg",
+            "images/SONGESAND__2.jpg",
+            "images/SONGESAND__3.jpg",
+            "images/SONGESAND__4.jpg",
+            "images/SONGESAND__5.jpg"
+        ]
+    },
+    {
+        "name": "TYSSEDAL",
+        "description": "",
+        "category": "bed",
+        "price": 369,
+        "oldprice": false,
+        "availability": true,
+        "stars": 2,
+        "images": [
+            "images/TYSSEDAL__main.jpg",
+            "images/TYSSEDAL__1.jpg",
+            "images/TYSSEDAL__2.jpg",
+            "images/TYSSEDAL__3.jpg",
+            "images/TYSSEDAL__4.jpg",
+            "images/TYSSEDAL__5.jpg"
+        ]
+    },
+    {
+        "name": "HAMMARN",
+        "description": "",
+        "category": "sofa",
+        "price": 89,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/HAMMARN__main.jpg",
+            "images/HAMMARN__1.jpg",
+            "images/HAMMARN__2.jpg",
+            "images/HAMMARN__3.jpg",
+            "images/HAMMARN__4.jpg",
+            "images/HAMMARN__5.jpg"
+        ]
+    },
+    {
+        "name": "ASKEBY",
+        "description": "",
+        "category": "sofa",
+        "price": 149,
+        "oldprice": false,
+        "availability": true,
+        "stars": 1,
+        "images": [
+            "images/ASKEBY__main.jpg",
+            "images/ASKEBY__1.jpg",
+            "images/ASKEBY__2.jpg"
+        ]
+    },
+    {
+        "name": "ASKEBY",
+        "description": "",
+        "category": "sofa",
+        "price": 149,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/ASKEBY1__main.jpg",
+            "images/ASKEBY1__1.jpg"
+        ]
+    },
+    {
+        "name": "LYCKSELE",
+        "description": "",
+        "category": "sofa",
+        "price": 179,
+        "oldprice": false,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/LYCKSELE__main.jpg",
+            "images/LYCKSELE__1.jpg",
+            "images/LYCKSELE__2.jpg",
+            "images/LYCKSELE__3.jpg",
+            "images/LYCKSELE__4.jpg",
+            "images/LYCKSELE__5.jpg"
+        ]
+    },
+    {
+        "name": "ASARUM",
+        "description": "",
+        "category": "sofa",
+        "price": 199,
+        "oldprice": 250,
+        "availability": true,
+        "stars": 3,
+        "images": [
+            "images/ASARUM__main.jpg",
+            "images/ASARUM__1.jpg",
+            "images/ASARUM__2.jpg",
+            "images/ASARUM__3.jpg",
+            "images/ASARUM__4.jpg"
+        ]
+    },
+    {
+        "name": "NYHAMN",
+        "description": "",
+        "category": "sofa",
+        "price": 209,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/NYHAMN__main.jpg",
+            "images/NYHAMN__1.jpg",
+            "images/NYHAMN__2.jpg",
+            "images/NYHAMN__3.jpg",
+            "images/NYHAMN__4.jpg"
+        ]
+    },
+    {
+        "name": "ANGSTA",
+        "description": "",
+        "category": "sofa",
+        "price": 219,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/ANGSTA__main.jpg",
+            "images/ANGSTA__1.jpg"
+        ]
+    },
+    {
+        "name": "ARVIKEN",
+        "description": "",
+        "category": "sofa",
+        "price": 249,
+        "oldprice": false,
+        "availability": true,
+        "stars": 4,
+        "images": [
+            "images/ARVIKEN__main.jpg",
+            "images/ARVIKEN__1.jpg"
+        ]
+    },
+    {
+        "name": "GRIMHULT",
+        "description": "",
+        "category": "sofa",
+        "price": 329,
+        "oldprice": false,
+        "availability": true,
+        "stars": 1,
+        "images": [
+            "images/GRIMHULT__main.jpg",
+            "images/GRIMHULT__1.jpg",
+            "images/GRIMHULT__2.jpg",
+            "images/GRIMHULT__3.jpg",
+            "images/GRIMHULT__4.jpg",
+            "images/GRIMHULT__5.jpg"
+        ]
+    },
+    {
+        "name": "BASTUBO",
+        "description": "",
+        "category": "sofa",
+        "price": 339,
+        "oldprice": false,
+        "availability": true,
+        "stars": 5,
+        "images": [
+            "images/BASTUBO__main.jpg",
+            "images/BASTUBO__1.jpg",
+            "images/BASTUBO__2.jpg",
+            "images/BASTUBO__3.jpg",
+            "images/BASTUBO__4.jpg",
+            "images/BASTUBO__5.jpg"
+        ]
+    }
+]
