@@ -58,9 +58,9 @@ class Item {
 
         function addPrice(price, oldprice) {
             if (oldprice) {
-                return `<div class="deals__price-last">${oldprice}</div><div class="deals__price-new">${price}</div>`
+                return `<div class="deals__price-last">$${oldprice}</div><div class="deals__price-new">$${price}</div>`
             } else {
-                return `<div class="deals__price-new">${price}</div>`
+                return `<div class="deals__price-new">$${price}</div>`
             }
         }
 
@@ -147,11 +147,6 @@ function hideTabs() {
         }
     })
 }
-
-fetch('../js/db.json').then(response => {
-    response;
-
-});
 
 function createTab(i) {
     let grid = document.querySelector('.showcase__grid');
@@ -242,7 +237,8 @@ document.addEventListener('keydown', (event) => {
     }
 })
 
+const footer__links = document.querySelectorAll('.footer__link'),
+footer__socialLinks = document.querySelectorAll('.footer__social-link');
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json));
+footer__links.forEach(i => i.addEventListener('click', event => event.preventDefault()));
+footer__socialLinks.forEach(i => i.addEventListener('click', event => event.preventDefault()));
