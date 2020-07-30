@@ -645,6 +645,12 @@ html {
   }
 }
 
+.pre-advantages {
+  margin: 150px 0 0 0;
+  height: 50px;
+  display: block;
+}
+
 .advantages {
   margin: 0 0 30px 0;
   display: -webkit-box;
@@ -724,10 +730,6 @@ html {
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
-}
-
-.offers {
-  margin: 0 0 200px 0;
 }
 
 @media screen and (max-width: 825px) {
