@@ -198,7 +198,7 @@ showcase.addEventListener('click', (event) => {
 // form
 
 const login = document.querySelector('.js--login'),
-    exit = document.querySelector('.login-form__exit'),
+    exit = document.querySelectorAll('.login-form__exit'),
     formWrapper = document.querySelector('.header__form-wrapper'),
     reg = document.querySelector('.js--reg');
 
@@ -225,7 +225,7 @@ function hideForm() {
 
 login.addEventListener('click', event => showForm(event));
 reg.addEventListener('click', event => showForm(event));
-exit.addEventListener('click', hideForm);
+exit.forEach(i => i.addEventListener('click', hideForm));
 
 formWrapper.addEventListener('click', (event) => {
     const target = event.target;
