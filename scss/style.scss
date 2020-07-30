@@ -1241,7 +1241,7 @@ h1, h2 {
 
 .gallery{
     &__grid{
-        display: flex;
+        display: none;
         margin: 0 0 60px 0px;
 
         @media screen and (max-width: 1200px){
